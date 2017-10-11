@@ -20,12 +20,37 @@ margin: 0px;
 
 #boxes {
     font-size: 0px;
+    position: relative;
 }
 
 .in-block {
     display: inline-block;
 }
 
-#thebox {
-    color: 273;
+#the-box {
+    position: absolute;
+    background-color: darkgreen;
+    top: 10px;
+    right: 20px;
+    z-index: -1;
+}
+
+.outer {
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    position: relative;
+}
+.middle {
+    height: 300px;
+    width: 300px;
+    background-color: green;
+}
+.inner {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
 }
